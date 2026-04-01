@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<HEAD>
+
+<link rel="icon" href="./favicon.png" type="image/png" />
+<link rel="shortcut icon" href="./favicon.png" type="image/png" />
+<TITLE>TadPath - Advanced Techniques</TITLE>
+<META NAME="Description" CONTENT="histopathology, diagnosis, biopsy, lab, laboratory, pathology, service, TadPath, surgical, pharma, pharmaceutical, digital image analysis, image processing, research, consultancy, 3D printing, thyroid, parathyroid, ENT, liver, maxillofacial, endocrine, lymph node, haematopathology, bone marrow, trephine, TB, tuberculosis, autoimmune, lymphoma, leukaemia, urology, prostate, kidney, bladder, GI, colon, colorectal, oesophagus, gastric, duodenum, ilium, cancer, report">
+<link rel="icon" href="./favicon.png" /> 
+<link rel="shortcut icon" href="./favicon.png" /> 
+</HEAD>
+
+<BODY BACKGROUND="./Images/TP_bg.jpg" BGPROPERTIES="FIXED" BGCOLOR="#000000" TEXT="#DDDDDD" LINK="#FFFFAA" ALINK="#999999" VLINK="#22AA22">
+
+
+<TABLE WIDTH="640" BORDER="0" CELLPADDING="4" CELLSPACING="0">
+ <TD ALIGN="left" VALIGN="TOP"><LEFT>
+  <IMG SRC="./Images/TP_logo.gif" BORDER=0 ALT="TadPath Lab"><BR>
+  <FONT FACE="Verdana" SIZE="4" COLOR="#DDDDDD"><B>Histo Lab</B></FONT><P>
+  <FONT FACE="Arial" SIZE="2" COLOR="#000000">
+   <A HREF="./index.html"><BR>Home</A><BR>
+   <A HREF="./TPServices.html"><BR>Our services</A><BR>
+   <A HREF="./TPAdvanced.html"><BR>Advanced Techniques</A><BR>
+   <A HREF="./TPOrdering.html"><BR>How to order</A><BR>
+   <A HREF="./TPQuality.html"><BR>Quality assurance</A><BR>
+   <A HREF="./TPAbout.html"><BR>About us</A><BR>
+   <A HREF="./TPPrivacy.html"><BR>Privacy policy</A><BR>
+   <A HREF="./TPLegal.html"><BR>Terms and Conditions</A><BR>
+<BR>
+  </B></FONT>
+ </TD>
+ <TD ALIGN="center" VALIGN="TOP">
+
+  <TABLE ALIGN="center" VALIGN="TOP" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+   <TD VALIGN="TOP"><CENTER><FONT FACE="Verdana" SIZE="5" COLOR="#FFB6C1"><I><B>TadPath Diagnostics</B></I></FONT><BR>
+   <FONT FACE="Arial" SIZE="5" COLOR="#CC3333"><B>Advanced Techniques</B><P></FONT></CENTER>
+
+    <TABLE ALIGN="center" VALIGN="TOP" WIDTH="64" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+     <TD ALIGN="center" VALIGN="MIDDLE">
+      <IMG SRC="./Images/TP_advanced.jpg" width="512" height="228" BORDER=0 ALT="Advanced Techniques"></TD>
+    </TABLE>
+
+    <FONT FACE="Arial" SIZE="2" COLOR="#CC3333"><P style="text-align:justify"><B>We develop custom advanced algorithms and write our own software to provide truly unique services for cutting edge medical research. Some of our techniques are illustrated above: (Left) Virtual dye casting, (Middle) Metal artefact reduction in CT scans, (Right) 3D printed models derived from a patient's CT imaging. Some details are given below:</B></FONT></P>
+    <UL TYPE="DISC">
+    <LI style="text-align:justify"><FONT COLOR="CCCC00" FACE="Arial"><B>3D Printed Anatomical Models from Patients' CT Scans</B></FONT> - <FONT COLOR="ccccff" FACE="Verdana">We have developed specialist software and techniques to make high quality clinical grade 3D printed models of a patient's bony anatomy from their CT scans. An example of our physical 3D printed models is shown in the above figure (right) and a YouTube video showing some our models can be viewed here: <A HREF="https://youtu.be/LaJk8F3_1xc" target="_blank">3D model video demo</A>. Such models are dimensionally accurate (our quality control procedure ensures that concordance between the physical model and the calibrated CT scan is better than 1 mm). This allows our models to be used for surgical planning, pre-bending titanium plates, medical education, surgical training, etc. </FONT><FONT COLOR="#FFB6C1" FACE="Verdana"><I>Please note: Our models must NOT be used for internal purposes (i.e. any use that puts the model in contact with live patient tissue is prohibited). Thus our models must not be used as implants or intra-operative cutting guides.</I></FONT><FONT COLOR="ccccff" FACE="Verdana"> Below are some examples of the virutal models made from CT scans of a maxilla and a mandible from separate patients.<BR></FONT>
+    <IMG SRC="./Images/TP_manmax.jpg" width="512" height="768" BORDER=0 ALT="STL models of mandible and maxilla">
+     <LI style="text-align:justify"><FONT COLOR="CCCC00" FACE="Arial"><B>Metal Artefact Reduction in CT Scans</B></FONT> - <FONT COLOR="ccccff" FACE="Verdana">We have considerable experience of head and neck work and our 3D modelling processes in this region need to recover high fidelity profiles of bony structures of the jaws. Unfortunately many people have extensive metalwork in their teeth (amalgam fillings, crowns, etc.) which cause severe distortions in CT images due to over-scattering and lack of transmittance of the X-ray beams in the scanner. This results in gross distortions of the reconstructed images (an example is shown in the image at the top of this page - middle, top - and also in the figure below, left). Although many algorithms to reduce such artefact have been published since the mid 1980's we found none of them met out specific needs for reduction of severe (as opposed to only moderate) dental artefacts or others were made for use with specific scanners or required access to the raw scanner data. We rarely get access to raw CT scanner data and we use CT images from a variety of sources supplied to us by our clients. For this reason we developed our own in-house algorithm specially designed to deal with severe dental metalwork-induced artifacts. This is a non-iterative algorithm based on non-linear interpolation and inspired by the Kriging technique used in geosurveying. We call this the MARCI&trade; algorithm (Metal Artefact Reduction by Constrained Imputation). An example result of applying our MARCI algorithm is shown in the image at the top of this page (middle, bottom) and in the figure below (right). No algorithm can completely remove such severe artefact but our method reveals sufficient hidden detail for us to make good quality 3D models even from severely degraded images. </FONT><FONT COLOR="#FFB6C1" FACE="Verdana"><I>Please note:  We do not report CT scans or other radiology studies - we only process images as a service. MARCI algorithm processing is made available <B>for research purposes only</B> because it does not have any regulatory approval for clinical use.</I></FONT><FONT COLOR="ccccff" FACE="Verdana"> Below is a close-up of soft tissue windows from an original CT scan with severe metal artefacts (left) and the result of our MARCI algorithm on the same scan (right) showing not only reduced distortion of the bone profiles (which is what the algorithm was primarily designed for) but the added bonus of increased visibility of soft tissue structures as well.<BR></FONT>
+     <IMG SRC="./Images/TP_MARCI.jpg" width="512" height="256" BORDER=0 ALT="Metal artefact reduction by MARCI">
+     <LI style="text-align:justify"><FONT COLOR="CCCC00" FACE="Arial"><B>3D Serial Tissue Section Reconstruction</B></FONT> - <FONT COLOR="ccccff" FACE="Verdana">We have over 20 years experience in making high resolution 3D computer models of complex tissue and intracellular microanatomy from serial sections. These sections may be physical histology sections or optical sections using optical sectioning microscopy and 3D deconvolution. We are one of the few centres that can offer 3D deconvolution on bright field microscopy (as opposed to the simpler problem of fluorescence imaging). However, we don't stop at just making the 3D model. We have also developed unique visualisation tools and functional methods such as virtual dye casting. This allows complex microvascular and other connected structures to be traced in 3D in a computer model - without the need to make a physical model or inject the actual tissue (which would be impossible at this microscopic scale anyway). The figure at the top of this page on the left and, in greater detail, the figure below give an example of such dye casting done on liver histology showing the microvascular relationships in the human liver acinus. These are just static shots from a fully interactive virtual 3D model. This was published as: Tadrous, P. J., A. Hall, and A. P. Dhillon. "Advances in multiresolution serial section 3d reconstruction: applications to liver microarchitecutre." The Journal of Pathology 220 (2010): S11.<BR> 
+     <IMG SRC="./Images/TP_vdcliver1.jpg" width="512" height="256" BORDER=0 ALT="Virtual dye cast of liver microvsculature">
+     <LI style="text-align:justify"><FONT COLOR="CCCC00" FACE="Arial"><B>Deconvolution of 3D Microscopy Data</B></FONT> - <FONT COLOR="ccccff" FACE="Verdana">As briefly mentioned above we have developed specialist software and methods for recovering high resolution 3D imagery from brightfield microscopy such as (e.g.) to study the 3D structure of chromatin in the interphase nucleus. See, for example:<BR>1. Tadrous, P. J. "A method of PSF generation for 3D brightfield deconvolution." Journal of microscopy 237.2 (2010): 192-199.<BR>2. Tadrous, P. J. "A new 3d microscopy method for enhancing morphological diagnosis and mapping the ‘chromatome’." The Journal of Pathology 220 (2010): S4.<BR>3. Tadrous PJ. Subcellular Microanatomy by 3D Deconvolution Brightfield Microscopy: Method and Analysis Using Human Chromatin in the Interphase Nucleus. Anat Res Int. 2012;2012:848707. doi:10.1155/2012/848707<BR> Our methods will also work with the simpler and more common application of fluorescence microscopy. Below is a 3D visualisation of a through-focus Z-series of a hepatiocyte (nucleus stained with haematoxylin, bright field microscopy). On the left is the original stack. On the right is the result of our bright field deconvolution method applied to that data. The Z-stacks are displayed as a cube with a quarter of the cube cut-away for clarity using our custom visualisation tools. An example video showing a 'fly-into' sequence into a human plasma cell nucleus (actual 3D deconvolved chromatin image data - not a synthetic 3D model) is available via this link: <A HREF="https://commons.wikimedia.org/wiki/File:Subcellular-Microanatomy-by-3D-Deconvolution-Brightfield-Microscopy-Method-and-Analysis-Using-Human-848707.f1.ogv" target="_blank">3D nucleus video</A><BR></FONT>
+     <IMG SRC="./Images/TP_3ddcliver1.jpg" width="512" height="256" BORDER=0 ALT="3D deconvolution of hepatocyte">
+     <LI style="text-align:justify"><FONT COLOR="CCCC00" FACE="Arial"><B>Advanced Image Processing and Machine Vision</B></FONT> - <FONT COLOR="ccccff" FACE="Verdana">Many medical researchers are familiar with excellent and well-established free tools such as QuPath, NIH ImageJ, etc. for DIY image processing such as cell counting, measuring areas, etc. Although we can do those basics with our software we specialise in custom algorithm development to solve unique research problems such as automated machine vision and task-specific transforms and measurement systems, developing our own new algorithms and writing in-house software to implement them for specific tasks in specific fields of biomedicine. If you have an image processing, analysis or machine vision task that cannot be done using standard software, please get in touch for further information on our bespoke image processing and analysis solutions and consultancy.</FONT>
+     <P>
+     
+    </UL>
+  </TABLE>
+<TABLE ALIGN="center" WIDTH="512" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+ <TD>
+  <HR WIDTH="100%" SIZE="3" NOSHADE>
+
+  <CENTER>
+   <FONT SIZE="1" COLOR=#FFB6C1 FACE="VERDANA, ARIAL"><B>Copyright (c) 2018 - 2026. Dr Paul J. Tadrous</B></FONT><BR>
+   <FONT SIZE="1" COLOR=#999999 FACE="VERDANA, ARIAL">
+        <A HREF="./index.html">Home</A> | 
+        <A HREF="./TPAbout.html">Contact Us</A> | 
+        <A HREF="./TPPrivacy.html">Privacy policy</A> |
+        <A HREF="./TPLegal.html">Terms and Conditions</A>
+
+   </FONT>
+  </CENTER>
+</TD>
+</TABLE>
+ </TD>
+ 
+
+</TABLE>
+
+
+</BODY>
+</html>
